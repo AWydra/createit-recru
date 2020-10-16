@@ -1,0 +1,2 @@
+.loader{width:100%;height:calc(100vh - 238px);display:flex;justify-content:center;align-items:center}.loader__spinner{width:100px;height:100px;border-width:.5em}.navbar{margin-bottom:4em;background-color:#041230;color:#fff}.navbar__link{color:#fff;transition:all .1s ease-in-out}.navbar__link:focus,.navbar__link:hover{color:#bbb;text-decoration:none}*,:after,:before{font-family:Roboto,"sens-serif"}
+/*# sourceMappingURL=main.3d480af0.chunk.css.map */
