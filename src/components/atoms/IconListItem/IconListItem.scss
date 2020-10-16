@@ -1,0 +1,7 @@
+li {
+  font-size: 0.9em;
+
+  & > *:first-child {
+    margin-right: 8px;
+  }
+}
