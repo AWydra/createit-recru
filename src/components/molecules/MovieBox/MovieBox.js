@@ -7,7 +7,7 @@ import IconListItem from 'components/atoms/IconListItem/IconListItem';
 import './MovieBox.scss';
 import { CalendarEventFill, CashStack, TagFill } from 'react-bootstrap-icons';
 
-const MovieBox = ({ id, category, image, title, price, date }) => {
+const MovieBox = ({ id, category, image, title, price, date, heading: Heading }) => {
   return (
     <article className="col-12 col-sm-6 col-md-4 col-lg-3">
       <Link to={`/movie/${id}`} className="card movie overflow-hidden my-3">
@@ -20,7 +20,7 @@ const MovieBox = ({ id, category, image, title, price, date }) => {
           />
         </figure>
         <div className="card-body p-2">
-          <h3 className="movie--unbeakable h5">{title}</h3>
+          <Heading className="movie--unbeakable h5">{title}</Heading>
           <List aria-hidden="true">
             <IconListItem
               className="movie--unbeakable"
@@ -44,6 +44,10 @@ const MovieBox = ({ id, category, image, title, price, date }) => {
   );
 };
 
+MovieBox.defaultProps = {
+  heading: 'h3',
+};
+
 MovieBox.propTypes = {
   id: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
@@ -51,6 +55,7 @@ MovieBox.propTypes = {
   title: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
+  heading: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 };
 
 export default MovieBox;
