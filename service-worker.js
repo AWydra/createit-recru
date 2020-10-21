@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/createit-recru/precache-manifest.68fabf27915066c55cec12d648dd1aa6.js"
+  "/createit-recru/precache-manifest.04325033dbd3bf876711534c0e2dffa5.js"
 );
 
 self.addEventListener('message', (event) => {
