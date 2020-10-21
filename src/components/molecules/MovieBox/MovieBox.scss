@@ -7,13 +7,26 @@
 
   &:focus,
   &:hover {
+    outline: unset;
     color: unset;
     text-decoration: unset;
     transform: translateY(-3px);
   }
 
+  &:focus {
+    box-shadow: 0px 3px 8px 4px #041230;
+  }
+
   &__img {
     width: 100%;
+
+    &-container {
+      height: 0;
+
+      &.lazy-load-image-loaded {
+        height: auto;
+      }
+    }
   }
 
   &--unbeakable {

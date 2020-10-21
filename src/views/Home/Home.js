@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <>
-      <p className="h2 mb-5">Top 100 movies</p>
+      <h2 className="h2 mb-5">Top 100 movies</h2>
       <div className="row">
         {movies.map((movie) => (
           <MovieBox key={movie.id} {...movie} />

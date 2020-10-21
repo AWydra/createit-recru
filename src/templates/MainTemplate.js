@@ -20,10 +20,14 @@ const MainTemplate = () => {
 
   return (
     <>
-      <Navbar />
-      <div className="container">
-        <MainRoutes />
-      </div>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <section className="container">
+          <MainRoutes />
+        </section>
+      </main>
       <Footer />
     </>
   );

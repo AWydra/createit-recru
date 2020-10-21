@@ -22,14 +22,14 @@ const SimilarMovies = () => {
   }, [storeMovies, id]);
 
   return (
-    <>
+    <section>
       <h2 className="mt-5 mb-2 desc__heading">Similar Movies</h2>
       <div className="row">
         {movies.map((movie) => (
           <MovieBox key={movie.id} {...movie} />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

@@ -13,8 +13,8 @@ const Image = ({ ...props }) => {
 
   return (
     <>
-      <LazyLoadImage effect="blur" placeholderSrc={coverPhoto} afterLoad={handleLoad} {...props} />
-      {show && <img src={coverPhoto} alt="Cover" />}
+      <LazyLoadImage effect="blur" afterLoad={handleLoad} {...props} />
+      {show && <img src={coverPhoto} alt="" />}
     </>
   );
 };

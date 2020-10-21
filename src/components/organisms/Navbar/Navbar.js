@@ -4,7 +4,7 @@ import './Navbar.scss';
 
 const Navbar = () => (
   <nav className="navbar">
-    <Link to="/" className="navbar__link mb-0 py-3 h2">
+    <Link to="/" className="navbar__link mb-0 py-3 h2" aria-label="Return to home page">
       Streaming Service
     </Link>
   </nav>

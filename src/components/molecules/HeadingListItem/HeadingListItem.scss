@@ -2,4 +2,19 @@
   &__secondary {
     font-size: 17px;
   }
+
+  .btn {
+    $color: #041230;
+    $lightenColor: lighten($color, 20);
+
+    background-color: $color;
+    border-color: $color;
+    color: white;
+
+    &:hover,
+    &:focus {
+      background-color: $lightenColor;
+      border-color: $lightenColor;
+    }
+  }
 }

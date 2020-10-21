@@ -9,12 +9,19 @@ import { CalendarEventFill, CashStack, TagFill } from 'react-bootstrap-icons';
 
 const MovieBox = ({ id, category, image, title, price, date }) => {
   return (
-    <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+    <article className="col-12 col-sm-6 col-md-4 col-lg-3">
       <Link to={`/movie/${id}`} className="card movie overflow-hidden my-3">
-        <Image className="movie__img" wrapperClassName="movie__img-container" src={image} />
+        <figure className="m-0">
+          <Image
+            className="movie__img"
+            wrapperClassName="movie__img-container"
+            src={image}
+            alt=""
+          />
+        </figure>
         <div className="card-body p-2">
           <h3 className="movie--unbeakable h5">{title}</h3>
-          <List>
+          <List aria-hidden="true">
             <IconListItem
               className="movie--unbeakable"
               icon={<CashStack />}
@@ -33,7 +40,7 @@ const MovieBox = ({ id, category, image, title, price, date }) => {
           </List>
         </div>
       </Link>
-    </div>
+    </article>
   );
 };
 

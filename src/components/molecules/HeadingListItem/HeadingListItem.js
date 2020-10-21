@@ -4,8 +4,8 @@ import './HeadingListItem.scss';
 
 const HeadingListItem = ({ primary, secondary }) => {
   return (
-    <li className="list-group-item">
-      <h5 className="mb-2">{primary}</h5>
+    <li className="list-group-item heading-list">
+      <span className="h5 mb-2">{primary}</span>
       <p className="mb-1 heading-list__secondary">{secondary}</p>
     </li>
   );
